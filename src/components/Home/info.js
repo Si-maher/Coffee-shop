@@ -15,6 +15,11 @@ export default function Info() {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur.
             </p>
+            <Link to="/about/">
+              <button className="btn text-uppercase btn-yellow">
+                About page
+              </button>
+            </Link>
           </div>
         </div>
       </div>

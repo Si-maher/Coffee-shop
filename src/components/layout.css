@@ -40,3 +40,11 @@ h6 {
   background-position: center;
   background-size: cover;
 }
+.btn-yellow {
+  color: var(--mainYellow);
+  border-color: var(--mainYellow);
+}
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainDark);
+}
