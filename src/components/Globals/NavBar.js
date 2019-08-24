@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import logo from "../../images/logo.svg"
 import { FaCartArrowDown } from "react-icons/fa"
 
-export default class NavBar extends Component {
+class NavBar extends Component {
   state = {
     navbarOpen: false,
     css: "collapse navbar-collapse",
@@ -20,6 +20,7 @@ export default class NavBar extends Component {
       },
     ],
   }
+
   navBarHandler = () => {
     this.state.navbarOpen
       ? this.setState({ navbarOpen: false, css: "collapse navbar-collapse" })
@@ -42,7 +43,7 @@ export default class NavBar extends Component {
           type="button"
           onClick={this.navBarHandler}
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"/>
         </button>
         <div className={this.state.css}>
           <ul className="navbar-nav mx-auto">
@@ -60,8 +61,7 @@ export default class NavBar extends Component {
               )
             })}
             <li className="nav-item ml-sm-5">
-            <FaCartArrowDown className="cart-icon"/>
-
+              <FaCartArrowDown className="cart-icon" />
             </li>
           </ul>
         </div>
@@ -69,3 +69,4 @@ export default class NavBar extends Component {
     )
   }
 }
+export default NavBar

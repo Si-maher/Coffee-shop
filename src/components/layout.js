@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import "./bootstrap.min.css"
 import "./layout.css"
 import NavBar from "./Globals/NavBar"

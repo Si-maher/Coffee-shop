@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react"
 
-export default function Title({title}) {
-    return (
-        <div className="row">
-        <div className="col text-center mb-3">
-            <h1 className="display-4 text-capitalize font-weightbold">{title}</h1>
-
-        </div>
-        </div>
-    )
+const Title = ({ title }) => {
+  return (
+    <div className="row">
+      <div className="col text-center mb-3">
+        <h1 className="display-4 text-capitalize font-weightbold">{title}</h1>
+      </div>
+    </div>
+  )
 }
+export default Title
