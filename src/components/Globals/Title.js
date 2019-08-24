@@ -2,8 +2,11 @@ import React from 'react'
 
 export default function Title({title}) {
     return (
-        <div className="">
-            <h1>{title}</h1>
+        <div className="row">
+        <div className="col text-center mb-3">
+            <h1 className="display-4 text-capitalize font-weightbold">{title}</h1>
+
+        </div>
         </div>
     )
 }

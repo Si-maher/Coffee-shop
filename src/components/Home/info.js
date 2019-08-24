@@ -7,7 +7,7 @@ export default function Info() {
       <div className="container">
       <Title title="Our Story"/>
         <div className="row">
-          <div className="col-10 col-sm-8 mx-auto text-container">
+          <div className="col-10 col-sm-8 mx-auto text-center">
             <p className="lead text-muted mb-5">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
