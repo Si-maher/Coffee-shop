@@ -4,7 +4,7 @@ const Title = ({ title }) => {
   return (
     <div className="row">
       <div className="col text-center mb-3">
-        <h1 className="display-4 text-capitalize font-weightbold">{title}</h1>
+        <h1 className="display-4 text-capitalize ">{title}</h1>
       </div>
     </div>
   )

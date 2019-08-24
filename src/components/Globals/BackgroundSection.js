@@ -4,7 +4,7 @@ import HeroImage from "gatsby-background-image"
 const BackgroundSection = ({ img, styleClass, title, children }) => {
   return (
     <HeroImage className={styleClass} fluid={img}>
-      <h1 className="title text-white text-uppercase text-center display-4 font-weight-bold">
+      <h1 className="title text-white text-uppercase text-center display-4 font-weight-lighter">
         {title}
       </h1>
       {children}
