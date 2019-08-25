@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Title from "../Globals/Title"
-import { FaBatteryEmpty } from "react-icons/fa"
+import Img from "gatsby-image"
 
 class Menu extends Component {
   constructor(props) {
@@ -18,8 +18,25 @@ class Menu extends Component {
           <div className="container">
             <Title title="Our menu" />
             <div className="row mb-5">
-              <div className="col">
-                <h1>Items for sale</h1>
+              {/* categories */}
+              {/* items  */}
+              <div classNamer="row">
+                {this.state.coffeeItems.map(({ node }) => {
+                  return (
+                    <div key={node.id} className="col-11 col-md-6 my-3 d-flex ">
+                      {/* <div> <Img fixed={node.image.fixed} /></div> */}
+                      <div className="flex-grow-1 px-3">
+                        <div className="d-flex justify-content-between">
+                          <h6 className="mb-0">{node.title}</h6>
+                          <h6 className="mb-0">€{node.price}</h6>
+                        </div>
+                        <p className="text-muted">
+                          <small>{node.description.description}</small>
+                        </p>
+                      </div>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
