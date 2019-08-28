@@ -35,13 +35,20 @@ export const query = graphql`
         node {
           id
           title
-
+          description {
+            description
+          }
           price
           category
+          # image {
+            #fixed(width: 50, height: 50) {
+              #...GatsbyContentfulFixed_tracedSVG
+             
+          }
         }
       }
     }
-  }
+  
 `
 
 export default IndexPage

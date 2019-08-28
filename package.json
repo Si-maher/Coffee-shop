@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@types/sharp": "^0.22.2",
     "eslint-plugin-graphql": "^3.0.3",
     "express-graphql": "^0.9.0",
     "gatsby": "^2.13.61",
