@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -7,6 +7,8 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/info"
 import Menu from "../components/Home/Menu"
+import Products from "../components/Home/Products"
+import Contact from "../components/Home/contact"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -17,6 +19,8 @@ const IndexPage = ({ data }) => (
     />
     <Info />
     <Menu items={data.menu} />
+    <Products />
+    <Contact />
   </Layout>
 )
 
@@ -38,17 +42,25 @@ export const query = graphql`
           description {
             description
           }
+          image {
+            fixed(height:50, width:50) {
+              base64
+              tracedSVG
+              aspectRatio
+              width
+              height
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+            }
+          }
           price
           category
-          # image {
-            #fixed(width: 50, height: 50) {
-              #...GatsbyContentfulFixed_tracedSVG
-             
-          }
         }
       }
     }
-  
+  }
 `
 
 export default IndexPage

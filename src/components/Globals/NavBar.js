@@ -43,7 +43,7 @@ class NavBar extends Component {
           type="button"
           onClick={this.navBarHandler}
         >
-          <span className="navbar-toggler-icon"/>
+          <span className="navbar-toggler-icon" />
         </button>
         <div className={this.state.css}>
           <ul className="navbar-nav mx-auto">
@@ -61,7 +61,7 @@ class NavBar extends Component {
               )
             })}
             <li className="nav-item ml-sm-5">
-              <FaCartArrowDown className="cart-icon" />
+              <FaCartArrowDown className="cart-icon snipcart-checkout" />
             </li>
           </ul>
         </div>

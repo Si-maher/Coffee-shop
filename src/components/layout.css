@@ -55,6 +55,7 @@ h6 {
   background: var(--mainDark);
   color: #fff;
 }
-.menu {
+.menu,
+.contact {
   background: var(--mainGrey);
 }
