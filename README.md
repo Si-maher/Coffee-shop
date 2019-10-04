@@ -10,3 +10,7 @@ This project was built using Gatsby, Contenful and Boostrap. The user can naviga
 *Gatsby
 *Bootstrap
 *Contentful
+
+# Author
+
+Simon Maher
