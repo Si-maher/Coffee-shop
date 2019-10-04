@@ -6,7 +6,7 @@ This project was built using Gatsby, Contenful and Boostrap. The user can naviga
 
 # Preview
 ![Coffee-shop -Preview](./coffeeShop.PNG)
-# Tecnologies
+# Technologies
 *Gatsby
 *Bootstrap
 *Contentful
